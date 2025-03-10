@@ -10,13 +10,12 @@ LAZY_PATH="$HOME/.local/share/nvim/lazy.nvim"
 
 # Create necessary directories
 echo "Creating Neovim config directories..."
-mkdir -p "$NVIM_CONFIG/lua"
+mkdir -p $NVIM_CONFIG
 
 # Copy configuration files
 echo "Copying configuration files..."
 cp init.lua "$NVIM_CONFIG/"
-cp config.lua "$NVIM_CONFIG/lua/"
-cp plugins.lua "$NVIM_CONFIG/lua/"
+cp -R lua "$NVIM_CONFIG/"
 
 # Install Lazy.nvim if not installed
 if [ ! -d "$LAZY_PATH" ]; then
