@@ -33,4 +33,10 @@ return {
 
   -- Formatter Configuration
   { "mhartington/formatter.nvim" },
+
+  { -- Indentation guides
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    opts = {}
+  },
 }

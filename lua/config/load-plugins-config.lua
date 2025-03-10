@@ -4,4 +4,5 @@ require("config.plugins.lualine")
 require("config.plugins.mason")
 require("config.plugins.lspconfig")
 require("config.plugins.formatter")
+require("config.plugins.indent-blankline")
 
